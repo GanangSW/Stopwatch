@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MM"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    tools:context="com.gswstudio.stopwatch.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_stopwatch"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <LinearLayout
+        style="@style/MW"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/MW"
+            android:gravity="center"
+            android:text="@string/_00_00_00"
+            android:textColor="@color/colorPrimary"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            style="@style/MW"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/button"
+                style="@style/BT_style"
+                android:layout_weight="1"
+                android:text="@string/start" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/BT_style"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:text="@string/pause" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/BT_style"
+                android:layout_weight="1"
+                android:text="@string/reset" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/BT_style"
+            android:layout_marginTop="24dp"
+            android:text="@string/save_lap" />
+
+        <ListView
+            android:id="@+id/listview1"
+            style="@style/MM"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+
+</FrameLayout>
